@@ -1,63 +1,63 @@
 # 🛒 Swift - Clique e Retire Express
 
-> Solução de agendamento e otimização para a jornada O2O (Online-to-Offline) da Swift, desenvolvida como Challenge para a FIAP.
+> Solução de agendamento e otimização para a jornada O2O (Online-to-Offline) da Swift, desenvolvida como Challenge acadêmico para a FIAP.
 
 ---
 
 ## 📝 O Problema
 
-Durante a análise da jornada de compra dos clientes Swift, identificámos três principais barreiras na modalidade de levantamento em loja física:
-* **Incerteza no Levantamento:** Filas inesperadas e tempo de espera na loja que quebram a agilidade da compra online.
-* **Checkout Desconectado:** O processo de finalização de compra online não dá controlo ao cliente sobre quando e como vai levantar o produto.
-* **Falta de Conveniência:** Clientes com pouco tempo desistem da compra por receio de demorarem muito na loja.
+Durante a análise da jornada de compra dos clientes da Swift, identificamos três principais barreiras na modalidade de retirada em loja física:
+* **Incerteza na Retirada:** Filas inesperadas e tempo de espera na loja, que prejudicam a agilidade da compra online.
+* **Checkout Desconectado:** O processo de finalização de compra online não oferece controle ao cliente sobre quando e como a retirada do produto ocorrerá.
+* **Falta de Conveniência:** Clientes com restrição de tempo desistem da compra por preocupação com a demora no atendimento presencial.
 
 ---
 
 ## 💡 A Solução: Clique e Retire Express
 
-O **Clique e Retire Express** é uma funcionalidade integrada no checkout que permite ao cliente agendar um horário exato para o levantamento da sua encomenda. 
-1. **Agendamento:** Após o pagamento, o cliente escolhe um intervalo de horário disponível na loja selecionada.
-2. **Código QR de Libertação:** O sistema gera um Código QR exclusivo para a compra.
-3. **Levantamento Instantâneo:** Na loja, basta digitalizar o código num terminal de autoatendimento para libertar a encomenda imediatamente, eliminando filas e o contacto direto com o funcionário da caixa.
+O **Clique e Retire Express** é uma funcionalidade integrada ao checkout que permite ao cliente agendar um horário exato para a retirada do seu pedido. 
+1. **Agendamento:** Após o pagamento, o cliente seleciona um intervalo de horário disponível na unidade escolhida.
+2. **QR Code de Liberação:** O sistema gera um QR Code exclusivo para o pedido.
+3. **Retirada Instantânea:** Na loja física, o cliente realiza a leitura do código em um terminal de autoatendimento para liberar o pedido imediatamente, eliminando filas e a necessidade de passar pelo caixa.
 
 ---
 
 ## 🖥️ Demonstração do Protótipo
 
-Como o projeto foi desenvolvido com tecnologias web nativas, pode testar a interface do protótipo diretamente no seu navegador!
+Como o projeto foi desenvolvido com tecnologias web nativas, é possível testar a interface do protótipo diretamente no navegador.
 
-👉 **[Clique aqui para aceder ao protótipo a correr ao vivo!](https://vitorhugolecryman.github.io/swift-clique-retire-express/)**
+👉 **[Clique aqui para acessar o protótipo online](https://vitorhugolecryman.github.io/swift-clique-retire-express/)**
 
-*Dica: Pode também consultar o documento completo com toda a pesquisa e apresentação na raiz deste repositório no ficheiro `Sprint_Switft.pdf`.*
+*Nota: A documentação completa, incluindo a pesquisa e a apresentação do projeto, está disponível no arquivo `Sprint_Switft.pdf` na raiz deste repositório.*
 
 ![Interface do Protótipo](./assets/preview-web.png)
 
 ---
 
-## 🏗️ Arquitetura e Modelação de Dados
+## 🏗️ Arquitetura e Modelagem de Dados
 
-Para suportar o agendamento de forma escalável e integrada com as lojas físicas, modelámos uma base de dados relacional que liga Clientes, Encomendas, Lojas e Vagas de Horários.
+Para viabilizar o agendamento de forma escalável e integrada às lojas físicas, foi modelada uma base de dados relacional que conecta Clientes, Pedidos, Lojas e Disponibilidade de Horários (Slots).
 
 ![Modelo Entidade-Relacionamento](./assets/diagrama-base-dados.png)
 
 ### Principais Entidades:
-* **CLIENTE:** Registo e credenciais dos utilizadores.
-* **PEDIDO:** Registo das compras realizadas no e-commerce.
-* **SLOT_HORARIO:** Controlo de vagas disponíveis por horário em cada unidade da Swift.
-* **LOJA:** Unidades físicas integradas no sistema de levantamento.
-* **AGENDAMENTO:** Entidade que liga a Encomenda à Vaga de Horário e gera o Código QR único.
+* **CLIENTE:** Registro e credenciais dos usuários.
+* **PEDIDO:** Registro das compras realizadas no e-commerce.
+* **SLOT_HORARIO:** Controle de vagas disponíveis por horário em cada unidade física da Swift.
+* **LOJA:** Unidades físicas integradas ao sistema de retirada rápida.
+* **AGENDAMENTO:** Entidade que relaciona o Pedido à vaga de horário e gera o QR Code único.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-O protótipo responsivo foi construído utilizando:
+O protótipo responsivo foi desenvolvido utilizando:
 * **HTML5** & **CSS3** (Estrutura e Estilização)
-* **Bootstrap 5** (Responsividade e componentes visuais rápidos)
-* **JavaScript** (Lógica do simulador de agendamento e geração do Código QR)
-* **dbdiagram.io** (Modelação de dados)
+* **Bootstrap 5** (Responsividade e componentes visuais)
+* **JavaScript** (Lógica do simulador de agendamento e geração do QR Code)
+* **dbdiagram.io** (Modelagem de dados)
 
 ---
 
-## 👥 Equipa (FIAP - 2º Semestre)
+## 👥 Equipe (FIAP - 2º Semestre)
 * **Vitor Hugo Dantas Tavares** - RM: 559349
