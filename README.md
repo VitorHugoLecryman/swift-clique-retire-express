@@ -26,7 +26,7 @@ O **Clique e Retire Express** é uma funcionalidade integrada no checkout que pe
 
 Como o projeto foi desenvolvido com tecnologias web nativas, pode testar a interface do protótipo diretamente no seu navegador!
 
-👉 **[Clique aqui para aceder ao protótipo a correr ao vivo!](COLOQUE_AQUI_O_LINK_DO_GITHUB_PAGES)**
+👉 **[Clique aqui para aceder ao protótipo a correr ao vivo!]https://vitorhugolecryman.github.io/swift-clique-retire-express/**
 
 *Dica: Pode também consultar o documento completo com toda a pesquisa e apresentação na raiz deste repositório no ficheiro `Sprint_Switft.pdf`.*
 
